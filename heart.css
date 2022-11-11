@@ -1,0 +1,194 @@
+ .pinkboard {
+     opacity: 0;
+     transition: all 3s ease;
+ }
+
+ .pinkboard.active {
+     opacity: 1;
+ }
+
+ #btnText {
+     width: auto;
+     height: auto;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     transition: all 1.5s ease-in;
+ }
+
+ #btnText.active {
+     opacity: 0;
+ }
+
+ h1 {
+     color: aqua;
+     left: -80%;
+     /* font-size: 2rem; */
+     position: relative;
+     opacity: 1;
+     font-weight: 100;
+     font-size: 2.5rem;
+     transform: skew(-15deg);
+ }
+
+ h1>#text {
+     width: 220px;
+     animation: colorC 5s infinite linear;
+
+     position: absolute;
+     object-position: center;
+
+ }
+
+ @keyframes colorC {
+     0% {
+         color: rgb(221, 14, 38);
+         transform: scale(.8);
+         transform: rotate(5deg);
+     }
+
+     50% {
+         color: rgb(223, 238, 11);
+         transform: scale(.8);
+
+     }
+
+     100% {
+         color: rgb(9, 234, 28);
+         transform: scale(1);
+         transform: rotate(5deg);
+
+
+     }
+ }
+ @-moz-keyframes colorC {
+    0% {
+        color: rgb(221, 14, 38);
+        transform: scale(.8);
+        transform: rotate(5deg);
+    }
+
+    50% {
+        color: rgb(223, 238, 11);
+        transform: scale(.8);
+
+    }
+
+    100% {
+        color: rgb(9, 234, 28);
+        transform: scale(1);
+        transform: rotate(5deg);
+
+
+    }
+}
+@-webkit-keyframes colorC {
+    0% {
+        color: rgb(221, 14, 38);
+        transform: scale(.8);
+        transform: rotate(5deg);
+    }
+
+    50% {
+        color: rgb(223, 238, 11);
+        transform: scale(.8);
+
+    }
+
+    100% {
+        color: rgb(9, 234, 28);
+        transform: scale(1);
+        transform: rotate(5deg);
+
+
+    }
+}
+
+ #btnText>a {
+     display: block;
+     color: white;
+     text-decoration: none;
+     font-size: 1.3rem;
+     padding: 10px 20px;
+     box-shadow: 0px 0px 5px rgb(153, 151, 151);
+     border-radius: 30px;
+     transition: all .3s ease-in-out;
+     opacity: .6;
+     margin-top: 60px;
+ }
+
+ #btnText>a:hover {
+     transform: scale(1.1);
+     opacity: 1;
+     font-weight: 200;
+     box-shadow: -2px -2px 3px rgb(153, 151, 151);
+
+ }
+
+ #afterText {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -100%);
+     opacity: 0;
+     transition: all 5s ease;
+     color: #FF7B89;
+     opacity: 0;
+ }
+
+ #afterText.active {
+     opacity: 1;
+ }
+
+ #afterText>h3 {
+     font-size: 2rem;
+     font-weight: 100;
+     animation: after 5s infinite linear;
+
+
+
+ }
+
+ @keyframes after {
+     0% {
+         transform: scale(1.2) skew(-15deg);
+     }
+
+     50% {
+         transform: scale(.8) skew(-15deg);
+     }
+
+     100% {
+         transform: scale(1.2) skew(-15deg);
+     }
+ }
+
+ @-moz-keyframes after {
+     0% {
+         transform: scale(1.2) skew(-15deg);
+     }
+
+     50% {
+         transform: scale(.8) skew(-15deg);
+     }
+
+     100% {
+         transform: scale(1.2) skew(-15deg);
+     }
+ }
+
+ @-webkit-keyframes after {
+     0% {
+         transform: scale(1.2) skew(-15deg);
+     }
+
+     50% {
+         transform: scale(.8) skew(-15deg);
+     }
+
+     100% {
+         transform: scale(1.2) skew(-15deg);
+     }
+ }
